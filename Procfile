@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS "-Xlog:os+container*=trace" -cp target/classes:target/dependency/* de.malax.App
+web: java $JAVA_OPTS "-XX:+PrintFlagsFinal" "-Xlog:os+container*=trace" -cp target/classes:target/dependency/* de.malax.App
