@@ -17,7 +17,7 @@ public class App {
                     public void handleRequest(final HttpServerExchange exchange) throws Exception {
                         exchange.getResponseHeaders().put(Headers.CONTENT_TYPE, "text/plain");
                         exchange.getResponseSender().send("availableProcessors=" + Runtime.getRuntime().availableProcessors());
-			exchange.getResponseSender().send("Runtime.maxMemory=" + Runtime.maxMemory());
+			exchange.getResponseSender().send("Runtime.maxMemory=" + Runtime.getRuntime().maxMemory());
                     }
                 }).build();
 
